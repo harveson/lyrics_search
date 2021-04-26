@@ -1,0 +1,5 @@
+.vscode
+venv
+.DS_Store
+lyrics.db
+labeled_lyrics_cleaned.csv

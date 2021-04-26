@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>START</title>
+  <meta name="description" value="The search engine that doesn't track you. Learn More.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/css/colors.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/modal.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+  <link rel="icon" type="image/png" href="/static/img/se.png">
+  <meta name="author" value="RongChang">
+</head>
+<body>
+  <div class="index">
+    <section class="index__header">
+      <div class="index__logo"></div>
+      <ul class="index__nav">
+        <li class="index__active"><a>Lyrics</a></li>
+      </ul>
+      <div class="index__search">
+        <form class="index__form" action="{{ url_for('index_query') }}" method="POST">
+          <div>
+            <input name="querytext" type="search" value=""
+                   class="index__query" 
+                   maxlength="512"
+                   autocomplete="off"
+                   title="Search"
+                   aria-label="Search"
+                   dir="ltr"
+                   spellcheck="off"
+                   autofocus="autofocus"
+            >
+          </div>
+          <button class="index__button" aria-label="Search" type="submit">
+            <div class="index__ico"></div>
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
